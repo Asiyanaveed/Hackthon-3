@@ -8,7 +8,15 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from "next/link";
 import Image from 'next/image'
 import { client } from "@/sanity/lib/client";
-import { Key } from "react";
+// import { Key } from "react";
+
+interface Product {
+  id  : string,
+  cardSecImg: string,
+  cardSecHeading: string,
+  cardSecSubHeading: string,
+  cardSecPrice: number
+}
 
 export default async function ProductShowcase() {
 
@@ -50,7 +58,7 @@ export default async function ProductShowcase() {
         className="w-full"
       >
         <CarouselContent className="-ml-2 md:-ml-4">
-          {res.cards.map((product: any , index: number) => (
+          {res.cards.map((product: Product, index: number) => (
             <CarouselItem key={product.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
               <div className="group relative flex flex-col">
                 <div className="aspect-square overflow-hidden rounded-lg bg-gray-100 relative">

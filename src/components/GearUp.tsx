@@ -8,6 +8,13 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
+interface GearUpCard {
+  gearUpCardsHeading: string
+  gearUpCardsSubHeading: string
+  gearUpCardsPrice: string
+  gearUpCardsImg: string
+}
+
 export default async function GearUp() {
   const res = await client.fetch(`
     *[_type == 'landingPage'][0].sections[2].gearUpCards[]{
@@ -23,7 +30,7 @@ export default async function GearUp() {
       <h2 className="text-2xl font-medium mb-8">Gear Up</h2>
 
       <div className="flex items-center justify-between gap-4 mb-4">
-        <span className="text-sm font-medium">Shop Men&apos;s & Women&apos;s</span>
+        <span className="text-sm font-medium">Shop Men's & Women's</span>
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="icon" className="rounded-full bg-gray-100">
             <ChevronLeft className="h-4 w-4" />
@@ -35,7 +42,7 @@ export default async function GearUp() {
       </div>
 
       <div className="grid grid-cols-4 gap-4">
-        {res.slice(0, 4).map((product: any, index: number) => (
+        {res.slice(0, 4).map((product:GearUpCard , index: number) => (
           <Link key={index} href={"/products"}>
             <Card className="border-0 shadow-none">
               <CardContent className="p-0">

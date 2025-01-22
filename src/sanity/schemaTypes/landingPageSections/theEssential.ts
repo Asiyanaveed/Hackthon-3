@@ -14,6 +14,7 @@ export default {
                     type: 'object',
                     fields: [
                         { title: 'The Essential Image', name: 'theEssentialImg', type: 'image' },
+                        { title: 'The Essential Name', name: 'theEssentialname', type: 'string' }
                     ]
                 }
             ]
