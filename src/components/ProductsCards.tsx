@@ -31,7 +31,7 @@ export default async function ProductsCards() {
 } `) 
   
   if(!res || res.length === 0) {
-    await importData()
+     importData()
   }
   return (
     <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

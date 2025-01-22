@@ -95,7 +95,7 @@ export default function NikeLogin() {
             </div>
             {error && <p className="text-xs text-red-500">{error}</p>}
             <div className="text-center text-xs text-gray-500 px-4 mt-5">
-              By logging in, you agree to Nike&apos;s{" "}
+              By logging in, you agree to Nikes{" "}
               <Link href="#" className="underline">
                 Privacy Policy
               </Link>{" "}

@@ -1,4 +1,4 @@
-"use client"
+
 import ProductReviews from "@/components/ProductReview"
 import { Button } from "@/components/ui/button"
 import { ShoppingCart } from 'lucide-react'

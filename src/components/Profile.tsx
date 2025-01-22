@@ -15,11 +15,11 @@ interface UserProfileProps {
 }
 
 export default function UserProfile({
-  name = "John Doe",
-  email = "john.doe@example.com",
-  phone = "+1 234 567 890",
-  bio = "A passionate developer.",
-  imageUrl = "/profile-placeholder.png",
+  name = "",
+  email = "",
+  phone = "",
+  bio = "",
+  imageUrl = "",
 }: UserProfileProps) {
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({

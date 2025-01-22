@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Truck, User, Phone, Home, Building, MapPin, Package, Weight, Ruler } from 'lucide-react'
+import { Truck, User, Building, Package, } from 'lucide-react'
 import { postReq } from '../../../script/shipment'; // Using absolute path with alias
 
 
@@ -46,7 +46,7 @@ export default function ShipmentForm() {
   const [length, setLength] = useState(0)
 
   //alert-dailog
-  const [isDialogOpen, setIsDialogOpen] = useState(false)
+  // const [isDialogOpen, setIsDialogOpen] = useState(false)
   const [shipmentResponse, setShipmentResponse] = useState(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -63,9 +63,9 @@ export default function ShipmentForm() {
       from_address: shipFromAddress,
       from_city: shipFromCity,
       weight_value: weight,
-      height,
-      width,
-      length
+      height: height,
+      width: width,
+      length: length,
     }
 
     const data = await postReq(submitData)

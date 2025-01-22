@@ -85,7 +85,7 @@ export default function NikeSignupForm() {
               </Label>
             </div>
             <div className="text-xs text-center text-muted-foreground">
-              By creating an account, you agree to Nike&apos;s{" "}
+              By creating an account, you agree to Nikes{" "}
               <Link href="#" className="underline">
                 Privacy Policy
               </Link>{" "}

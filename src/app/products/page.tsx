@@ -4,6 +4,7 @@ import ProductsCards from '@/components/ProductsCards'
 import RelatedCategories from '@/components/RelatedCategories'
 import React from 'react'
 
+
  function ProductPage() {
 
   
