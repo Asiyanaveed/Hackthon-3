@@ -54,10 +54,10 @@ export default function CheckoutForm() {
         {/* Left Column - Form */}
         <div className="space-y-6">
           <div className="space-y-4">
-            <h2 className="text-xl font-medium">How would you like to get your order?</h2>
+            <h2 className="text-xl font-medium">How would you like to get your order</h2>
             <p className="text-sm text-gray-500">
-              Customs regulation for India require a copy of the recipient&apos;s KYC. The address on the KYC needs to match the
-              shipping address.
+              Customs regulation for India require a copy of the recipient s KYC The address on the KYC needs to match the
+              shipping address
             </p>
             <Button variant="outline" className="w-full justify-start gap-4 rounded-xl border-2 py-6">
               <div className="h-6 w-6 rounded-full border-2" />
@@ -66,7 +66,7 @@ export default function CheckoutForm() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-xl font-medium">Enter your name and address:</h2>
+            <h2 className="text-xl font-medium">Enter your name and address</h2>
             <div className="grid gap-4">
               <div className="grid gap-2">
                 <Input className="rounded-md py-6" placeholder="First Name" />
@@ -76,7 +76,7 @@ export default function CheckoutForm() {
               </div>
               <div className="grid gap-2">
                 <Input className="rounded-md py-6" placeholder="Address Line 1" />
-                <p className="text-xs text-gray-500">We do not ship to P.O. boxes</p>
+                <p className="text-xs text-gray-500">We do not ship to P  O boxes</p>
               </div>
               <div className="grid gap-2">
                 <Input className="rounded-md py-6" placeholder="Address Line 2" />
@@ -115,21 +115,21 @@ export default function CheckoutForm() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-xl font-medium">What&apos;s your contact information?</h2>
+            <h2 className="text-xl font-medium">What s your contact information</h2>
             <div className="grid gap-4">
               <div className="grid gap-2">
                 <Input className="rounded-md py-6" placeholder="Email" type="email" />
-                <p className="text-xs text-gray-500">A confirmation email will be sent after checkout.</p>
+                <p className="text-xs text-gray-500">A confirmation email will be sent after checkout</p>
               </div>
               <div className="grid gap-2">
                 <Input className="rounded-md py-6" placeholder="Phone Number" type="tel" />
-                <p className="text-xs text-gray-500">A carrier might contact you to confirm delivery.</p>
+                <p className="text-xs text-gray-500">A carrier might contact you to confirm delivery</p>
               </div>
             </div>
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-xl font-medium">What&apos;s your PAN?</h2>
+            <h2 className="text-xl font-medium">What s your PAN</h2>
             <div className="grid gap-4">
               <div className="grid gap-2">
                 <Input className="rounded-md py-6" placeholder="PAN" />
@@ -151,7 +151,7 @@ export default function CheckoutForm() {
               <Checkbox id="terms" className="mt-1" />
               <Label htmlFor="terms" className="text-sm text-gray-500">
                 I have read and consent to eShopWorld processing my information in accordance with the Privacy Statement and
-                Cookie Policy. eShopWorld is a trusted Nike partner.
+                Cookie Policy eShopWorld is a trusted Nike partner
               </Label>
             </div>
             <Button className="w-full rounded-full py-6" disabled>
@@ -178,7 +178,7 @@ export default function CheckoutForm() {
                 <span>₹ {totalAmount}</span>
               </div>
               <p className="mt-1 text-xs text-gray-500">
-                The total reflects the price of your order including all duties and taxes.
+                The total reflects the price of your order including all duties and taxes
               </p>
             </div>
 
@@ -198,11 +198,11 @@ export default function CheckoutForm() {
                 </div>
               </div>
               )})}
-              <h3 className="font-bold">Arrives Mon, 27 Mar - Wed, 12 Apr</h3>
+              <h3 className="font-bold">Arrives Mon 27 Mar  Wed 12 Apr</h3>
               
               
                     <div >
-                     <Button className="w-full" onClick={handlePayment}>Let's Pay</Button>
+                     <Button className="w-full" onClick={handlePayment}>Pay Now</Button>
                      </div>
             </div>
           </div>
