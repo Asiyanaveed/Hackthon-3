@@ -135,9 +135,8 @@ export default function ProductShowcase() {
     fetchData();
   }, []);
 
-  if (!data) {
-    return <div>Loading...</div>; // Render a loading state while data is being fetched.
-  }
+ 
+  if (!data) return null;
 
   return (
     <div className="w-full bg-white px-4 py-8 md:px-6 lg:px-8 mb-[84px]">

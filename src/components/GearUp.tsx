@@ -117,9 +117,8 @@ export default function GearUp() {
     fetchCards();
   }, []);
 
-  if (isLoading) {
-    return <div>Loading...</div>; // Optional loading state
-  }
+
+  
 
   return (
     <div className="container mx-auto px-4 mb-[84px]">
