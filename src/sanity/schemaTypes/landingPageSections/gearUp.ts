@@ -1,4 +1,4 @@
-export default{
+export const gearUp ={
     title: 'Gear Up',
     name: 'gearUp',
     type: 'object',

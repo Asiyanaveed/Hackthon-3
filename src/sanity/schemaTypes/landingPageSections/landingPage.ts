@@ -1,4 +1,4 @@
-export  default {
+export const landingPage = {
     title: 'Landing Page',
     name: 'landingPage',
     type: 'document',

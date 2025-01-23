@@ -1,29 +1,29 @@
 import type { NextConfig } from "next";
 import path from "path";
 
+// Your Next.js configuration object
 const nextConfig: NextConfig = {
-  images:{
-    remotePatterns:[
+  images: {
+    remotePatterns: [
       {
         protocol: "https",
         hostname: "cdn.sanity.io",
         port: "",
         pathname: "**",
-        search: ''
+        search: "",
       },
     ],
   },
-  webpack: (config) => {
-    console.log("Webpack Aliases:", config.resolve.alias);
+
+  // Webpack Configuration
+  webpack(config: { resolve: { alias: any } }) {
     config.resolve.alias = {
       ...config.resolve.alias,
-      "@": path.resolve(__dirname, "src"), // Changed from @constant to @ for matching
+      '@opentelemetry/api': path.resolve(__dirname, 'node_modules/@opentelemetry/api'),
+      // Add any other aliases you need here
     };
     return config;
   },
-  
-
-  
 };
 
 export default nextConfig;

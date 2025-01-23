@@ -56,7 +56,7 @@ export default function CheckoutForm() {
           <div className="space-y-4">
             <h2 className="text-xl font-medium">How would you like to get your order?</h2>
             <p className="text-sm text-gray-500">
-              Customs regulation for India require a copy of the recipient KYC. The address on the KYC needs to match the
+              Customs regulation for India require a copy of the recipient&apos;s KYC. The address on the KYC needs to match the
               shipping address.
             </p>
             <Button variant="outline" className="w-full justify-start gap-4 rounded-xl border-2 py-6">
@@ -115,7 +115,7 @@ export default function CheckoutForm() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-xl font-medium">Whats your contact information?</h2>
+            <h2 className="text-xl font-medium">What&apos;s your contact information?</h2>
             <div className="grid gap-4">
               <div className="grid gap-2">
                 <Input className="rounded-md py-6" placeholder="Email" type="email" />
@@ -129,7 +129,7 @@ export default function CheckoutForm() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-xl font-medium">Whats your PAN?</h2>
+            <h2 className="text-xl font-medium">What&apos;s your PAN?</h2>
             <div className="grid gap-4">
               <div className="grid gap-2">
                 <Input className="rounded-md py-6" placeholder="PAN" />
@@ -178,7 +178,7 @@ export default function CheckoutForm() {
                 <span>₹ {totalAmount}</span>
               </div>
               <p className="mt-1 text-xs text-gray-500">
-                (The total reflects the price of your order, including all duties and taxes)
+                (The total reflects the price of your order including all duties and taxes)
               </p>
             </div>
 
@@ -198,7 +198,7 @@ export default function CheckoutForm() {
                 </div>
               </div>
               )})}
-              <h3 className="font-bold">Arrives Mon 27 Mar - Wed 12 Apr</h3>
+              <h3 className="font-bold">Arrives Mon, 27 Mar - Wed, 12 Apr</h3>
               
               
                     <div >

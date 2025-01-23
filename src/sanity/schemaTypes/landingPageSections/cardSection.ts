@@ -1,4 +1,4 @@
-export default{
+export const cardSection ={
     title: 'Card Section',
     name: 'cardSection',
     type: 'object',

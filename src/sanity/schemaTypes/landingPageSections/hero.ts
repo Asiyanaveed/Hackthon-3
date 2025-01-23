@@ -1,4 +1,4 @@
-export default {
+export const hero = {
     title :  'Hero',
     name : 'hero',
     type : 'object',

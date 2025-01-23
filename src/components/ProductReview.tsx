@@ -24,7 +24,7 @@ const ProductReviews = ({ productName }: ProductReviewsProps) => {
 
   useEffect(() => {
     // Fetch reviews for the current product
-    const fetchReviews = async () => {
+    const fetchReviews = async (): Promise<void> => {
       const res: Review[] = await client.fetch(`*[_type == "review" && productName == "${productName}"]{
         rating,
         reviewText,
@@ -78,8 +78,10 @@ const ProductReviews = ({ productName }: ProductReviewsProps) => {
       const totalRating = res.reduce((acc, review) => acc + review.rating, 0);
       const avg = totalRating / res.length;
       setAverageRating(avg || 0);
-    } catch (error) {
-      setSuccessMessage("There was an error submitting your review. Please try again.");
+    } catch {
+      setSuccessMessage(
+        "There was an error submitting your review. Please try again."
+      );
     }
   };
 

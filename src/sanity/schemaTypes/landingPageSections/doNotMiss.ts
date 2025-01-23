@@ -1,4 +1,4 @@
-export default {
+export const doNotMiss ={
     title :  'Do Not Miss',
     name : 'doNotMiss',
     type : 'object',

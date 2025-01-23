@@ -1,4 +1,4 @@
-export default {
+export const theEssential = {
     title: 'The Essential',
     name: 'theEssential',
     type: 'object',
