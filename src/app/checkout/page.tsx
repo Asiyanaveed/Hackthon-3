@@ -178,7 +178,7 @@ export default function CheckoutForm() {
                 <span>₹ {totalAmount}</span>
               </div>
               <p className="mt-1 text-xs text-gray-500">
-                (The total reflects the price of your order including all duties and taxes)
+                The total reflects the price of your order including all duties and taxes.
               </p>
             </div>
 
