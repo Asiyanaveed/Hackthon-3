@@ -28,16 +28,30 @@ export default function CheckoutForm() {
    const [shipCost, setShipCost] = useState(0)
 
 
-  useEffect(() => {
-    const data = localStorage.getItem("cart")
-    const cart = data ? JSON.parse(data) : []
-    setCartItems(cart)
+   useEffect(() => {
+    if (typeof window !== "undefined") { // Ensure this runs only on the client side
+      const data = localStorage.getItem("cart");
+      const cart = data ? JSON.parse(data) : [];
+      setCartItems(cart);
+  
+      const ShipmentData = localStorage.getItem("ShipmentData");
+      const shipData = ShipmentData ? JSON.parse(ShipmentData) : {};
+      const shipCost = shipData.shipment_cost?.amount.toFixed(2) || 0; // Use optional chaining
+      setShipCost(shipCost);
+    }
+  }, []);
 
-    const ShipmentData = localStorage.getItem("ShipmentData")
-    const shipData = ShipmentData ? JSON.parse(ShipmentData) : []
-    const shipCost = shipData.shipment_cost.amount.toFixed(2)
-    setShipCost(shipCost)
-  }, [])
+
+  // useEffect(() => {
+  //   const data = localStorage.getItem("cart")
+  //   const cart = data ? JSON.parse(data) : []
+  //   setCartItems(cart)
+
+  //   const ShipmentData = localStorage.getItem("ShipmentData")
+  //   const shipData = ShipmentData ? JSON.parse(ShipmentData) : []
+  //   const shipCost = shipData.shipment_cost?.amount.toFixed(2)
+  //   setShipCost(shipCost)
+  // }, [])
 
   function handlePayment(){
     alert("payment successfull ✅")
