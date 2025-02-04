@@ -1,11 +1,17 @@
+"use client"
 import FilterHeader from '@/components/FilterHeader'
 import FilterSidebar from '@/components/FilterSidebar'
 import ProductsCards from '@/components/ProductsCards'
 import RelatedCategories from '@/components/RelatedCategories'
-import React from 'react'
+import React, { useEffect } from 'react'
+import {  sanityUserPost } from '../../../script/userApi'
 
 
  function ProductPage() {
+
+  useEffect(()=>{
+    sanityUserPost()
+  },[])
 
   
   return (

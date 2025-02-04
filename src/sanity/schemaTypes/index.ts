@@ -7,6 +7,8 @@ import {doNotMiss} from './landingPageSections/doNotMiss'
 import {theEssential} from './landingPageSections/theEssential'
 import  { productSchema } from './product'
 import {review} from './review'
+import { userSchema } from './user'
+import { admin } from './admin'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -18,6 +20,8 @@ export const schema: { types: SchemaTypeDefinition[] } = {
        theEssential,
 
      productSchema,
-     review
+     review,
+     userSchema,
+     admin
   ],
 }

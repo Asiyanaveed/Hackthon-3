@@ -119,35 +119,35 @@ export default function ShipmentForm() {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="ship_to_name">Name</Label>
-              <Input id="ship_to_name" value={shipToName} onChange={(e) => setShipToName(e.target.value)} autoComplete='off' />
+              <Input id="ship_to_name" value={shipToName} onChange={(e) => setShipToName(e.target.value)} autoComplete='on' />
             </div>
             <div className="space-y-2">
               <Label htmlFor="ship_to_phone">Phone</Label>
-              <Input id="ship_to_phone" value={shipToPhone} onChange={(e) => setShipToPhone(e.target.value)} autoComplete='off' />
+              <Input id="ship_to_phone" value={shipToPhone} onChange={(e) => setShipToPhone(e.target.value)} autoComplete='on' />
             </div>
           </div>
           <div className="space-y-2">
             <Label htmlFor="ship_to_address">Address</Label>
-            <Input id="ship_to_address" value={shipToAddress} onChange={(e) => setShipToAddress(e.target.value)} autoComplete='off'/>
+            <Input id="ship_to_address" value={shipToAddress} onChange={(e) => setShipToAddress(e.target.value)} autoComplete='on'/>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="ship_to_city">City</Label>
-              <Input id="ship_to_city" value={shipToCity} onChange={(e) => setShipToCity(e.target.value)} autoComplete='off'/>
+              <Input id="ship_to_city" value={shipToCity} onChange={(e) => setShipToCity(e.target.value)} autoComplete='on'/>
             </div>
             <div className="space-y-2">
               <Label htmlFor="ship_to_state">State</Label>
-              <Input id="ship_to_state" value={shipToState} onChange={(e) => setShipToState(e.target.value)} autoComplete='off'/>
+              <Input id="ship_to_state" value={shipToState} onChange={(e) => setShipToState(e.target.value)} autoComplete='on'/>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="ship_to_postal_code">Postal Code</Label>
-              <Input id="ship_to_postal_code" value={shipToPostalCode} onChange={(e) => setShipToPostalCode(e.target.value)} autoComplete='off'/>
+              <Input id="ship_to_postal_code" value={shipToPostalCode} onChange={(e) => setShipToPostalCode(e.target.value)} autoComplete='on'/>
             </div>
             <div className="space-y-2">
               <Label htmlFor="ship_to_country_code">Country Code</Label>
-              <Input id="ship_to_country_code" value={shipToCountryCode} onChange={(e) => setShipToCountryCode(e.target.value)} autoComplete='off'/>
+              <Input id="ship_to_country_code" value={shipToCountryCode} onChange={(e) => setShipToCountryCode(e.target.value)} autoComplete='on'/>
             </div>
           </div>
           <div className="space-y-2">
@@ -176,39 +176,39 @@ export default function ShipmentForm() {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="ship_from_name">Name</Label>
-              <Input id="ship_from_name" value={shipFromName} onChange={(e) => setShipFromName(e.target.value)} autoComplete='off'/>
+              <Input id="ship_from_name" value={shipFromName} onChange={(e) => setShipFromName(e.target.value)} autoComplete='on'/>
             </div>
             <div className="space-y-2">
               <Label htmlFor="ship_from_company">Company Name</Label>
-              <Input id="ship_from_company" value={shipFromCompany} onChange={(e) => setShipFromCompany(e.target.value)} autoComplete='off'/>
+              <Input id="ship_from_company" value={shipFromCompany} onChange={(e) => setShipFromCompany(e.target.value)} autoComplete='on'/>
             </div>
           </div>
           <div className="space-y-2">
             <Label htmlFor="ship_from_phone">Phone</Label>
-            <Input id="ship_from_phone" value={shipFromPhone} onChange={(e) => setShipFromPhone(e.target.value)} autoComplete='off'/>
+            <Input id="ship_from_phone" value={shipFromPhone} onChange={(e) => setShipFromPhone(e.target.value)} autoComplete='on'/>
           </div>
           <div className="space-y-2">
             <Label htmlFor="ship_from_address">Address</Label>
-            <Input id="ship_from_address" value={shipFromAddress} onChange={(e) => setShipFromAddress(e.target.value)} autoComplete='off'/>
+            <Input id="ship_from_address" value={shipFromAddress} onChange={(e) => setShipFromAddress(e.target.value)} autoComplete='on'/>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="ship_from_city">City</Label>
-              <Input id="ship_from_city" value={shipFromCity} onChange={(e) => setShipFromCity(e.target.value)} autoComplete='off'/>
+              <Input id="ship_from_city" value={shipFromCity} onChange={(e) => setShipFromCity(e.target.value)} autoComplete='on'/>
             </div>
             <div className="space-y-2">
               <Label htmlFor="ship_from_state">State</Label>
-              <Input id="ship_from_state" value={shipFromState} onChange={(e) => setShipFromState(e.target.value)} autoComplete='off'/>
+              <Input id="ship_from_state" value={shipFromState} onChange={(e) => setShipFromState(e.target.value)} autoComplete='on'/>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="ship_from_postal_code">Postal Code</Label>
-              <Input id="ship_from_postal_code" value={shipFromPostalCode} onChange={(e) => setShipFromPostalCode(e.target.value)} autoComplete='off'/>
+              <Input id="ship_from_postal_code" value={shipFromPostalCode} onChange={(e) => setShipFromPostalCode(e.target.value)} autoComplete='on'/>
             </div>
             <div className="space-y-2">
               <Label htmlFor="ship_from_country_code">Country Code</Label>
-              <Input id="ship_from_country_code" value={shipFromCountryCode} onChange={(e) => setShipFromCountryCode(e.target.value)} autoComplete='off'/>
+              <Input id="ship_from_country_code" value={shipFromCountryCode} onChange={(e) => setShipFromCountryCode(e.target.value)} autoComplete='on'/>
             </div>
           </div>
           <div className="space-y-2">

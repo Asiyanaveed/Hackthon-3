@@ -1,3 +1,4 @@
+
 import { Menu, Search, Heart, ShoppingBag } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import {
@@ -8,6 +9,7 @@ import {
 import { Input } from "@/components/ui/input"
 import Image from 'next/image'
 import Link from 'next/link'
+import { UserButton } from '@clerk/nextjs'
 
 function Header() {
   return (
@@ -27,6 +29,7 @@ function Header() {
             <span className="text-gray-300">|</span>
             <Link href="/login" className="hover:text-gray-600">Sign In</Link>
           </nav>
+          <UserButton/>
         </div>
       </div>
 

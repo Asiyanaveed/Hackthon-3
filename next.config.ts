@@ -12,6 +12,13 @@ const nextConfig: NextConfig = {
         pathname: "**",
         search: "",
       },
+      {
+        protocol: "https",
+        hostname: "randomuser.me", // ✅ RandomUser API ko allow kiya
+        port: "",
+        pathname: "**",
+        search: "",
+      },
     ],
   },
 
@@ -24,6 +31,11 @@ const nextConfig: NextConfig = {
     };
     return config;
   },
+  
+
+
+
+  
 };
 
 export default nextConfig;
